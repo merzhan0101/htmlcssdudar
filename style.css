@@ -1,0 +1,383 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+a {
+    color: crimson;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition:all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition:all.6s ease;
+}
+
+a:hover {
+    color: green;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:active { color: blue; }
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/* Selection block */
+::selection { background: crimson; color: #fff }
+::-moz-selection { background: crimson; color: #fff }
+
+
+header, footer {
+    width: 98%;
+    background-color: #fff;
+    min-height: 50px;
+    float: left;
+}
+
+header {
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+#logo {
+    font-size: 1.3em;
+    font-family: Comic Sans MS, sans-serif;
+    color: silver;
+}
+
+.right { float: right; }
+.left { float: left; }
+.clear{ clear: both; }
+
+.contact {
+    font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 20px;
+}
+
+input[type=search].field { 
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=search].field:focus {border: 2px solid crimson}
+
+footer {
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding: 1%;
+    padding-bottom: 2px;
+}
+
+#menu {
+    color: #666;
+    font-size: 1.7em;
+    font-family: Comis Sans MS, sans-serif;
+}
+
+#menu hr {
+    max-width: 100%;
+    width: 500px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+#menuHrefs a {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color:#666;
+}
+
+#menuHrefs a:hover{
+    background-color:#ccc;
+}
+
+/* Основные стили для сайта */
+
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#wrapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    padding: center;
+
+}
+
+#wrapper #articles article {
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+
+@media (min-width: 900px) {
+#wrapper #articles article {
+    width: 31.33333%;
+    margin-right: 2%;
+    min-height: 400px;
+}}
+
+@media (max-width: 899px) and (min-width: 700px) {
+    #wrapper #articles article {
+        width: 80%; 
+        margin-left: 10%;
+        margin-bottom: 10px;;
+    }}
+
+@media (max-width: 699px) {
+    #wrapper #articles article {
+        width: 100%;
+        margin-bottom: 10px;
+    }}
+
+
+
+#wrapper #columnRight {
+    float: left;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+#wrapper #articles article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+}
+
+#wrapper #articles article h2 {
+    width: 90%;
+    margin: 10px;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+
+#wrapper #articles article p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+
+#wrapper #articles article a {
+    padding: 5px;
+    background-color: brown;
+    margin-left: 5%;
+    border-radius: 5px;
+    color: #fff;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*line-height: 10px;*/
+} 
+
+#wrapper #articles article a:hover {
+    background-color: blue;
+}
+
+#wrapper .product-parent #product_50152 .product {
+    float: left;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+
+/* Центральный блок сайта */
+
+#main_soc_block {
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin: 20px 0;
+    float: left;
+    background: url('../image/фон.jpg') repeat-x center;
+    height: 200px;
+}
+
+#main_soc_block_in {
+    text-align: center;
+    padding: 1%;
+    background-color:brown;
+    height: 200px;
+    border-radius: 7px;
+    border: 1px solid silver;
+    width: 500px;
+    max-width: 98%;
+}
+
+#main_soc_block_in a {
+    float: left;
+    background-color: coral;
+    padding: 5px;
+    border-radius: 6px;
+    color: #fff;
+    margin-top: 3%;
+    margin-left: 27%;
+}
+
+/* About us */
+
+#about_us {
+    width: 50%;
+    padding: 1%;
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+#columnRight {
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 1%;
+    padding-bottom: 30px;
+
+}
+
+
+.product-parent {
+    width: 30%;
+
+}
+
+
+/* Styles form */
+
+form {
+    width: 60%;
+    float: left;
+    margin-left: 20%;
+}
+
+form label {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 60%;
+    float: left;
+    clear: both;    
+    font-size: 1.5em;
+    background-color: #fafafa;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form input { 
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    float: left;
+    clear: both;
+    width: 40%;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+
+form #send {
+    float: left;
+    padding: 10px;
+    background-color:rgb(218, 134, 25);
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer; /* Google search */
+}
+
+form #send:hover{
+    background-color: rgb(150, 29, 29);
+}
+
+form input:focus, form textarea:focus {border: 2px solid crimson}
+
+/* registr */
+
+button {
+    float: left;
+    height: 25px;
+    margin-bottom: 5px;
+    padding: 0;
+    border-radius: 4px;
+    color: #f7f7f7;
+    font-size: 12px;
+    background-color: crimson;
+    clear: both;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Styles footer */
+
+footer img {width: 5%; float: left; margin-right: 5px; }
+
+#page-wrap:after {
+    content: "";
+    display: block;
+}
+
+footer, #page-wrap:after{height: 10px;}
+
+#page-wrap{
+    min-height: 93%;
+    margin-bottom: -10px;
+}
+
